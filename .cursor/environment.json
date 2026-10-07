@@ -1,0 +1,20 @@
+{
+  "name": "claude-quickstarts",
+  "install": "cd customer-support-agent && npm install && cd ../financial-data-analyst && npm install",
+  "terminals": [
+    {
+      "name": "customer-support-agent",
+      "command": "cd customer-support-agent && npm run dev",
+      "description": "Next.js dev server for the Customer Support Agent quickstart on http://localhost:3000"
+    },
+    {
+      "name": "financial-data-analyst",
+      "command": "cd financial-data-analyst && PORT=3001 npm run dev",
+      "description": "Next.js dev server for the Financial Data Analyst quickstart on http://localhost:3001"
+    }
+  ],
+  "ports": [
+    { "name": "customer-support-agent", "port": 3000 },
+    { "name": "financial-data-analyst", "port": 3001 }
+  ]
+}
